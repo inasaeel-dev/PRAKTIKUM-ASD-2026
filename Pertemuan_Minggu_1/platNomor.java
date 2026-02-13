@@ -1,3 +1,4 @@
+package Pertemuan_Minggu_1;
 import java.util.Scanner;
 
 public class platNomor {

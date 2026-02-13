@@ -1,7 +1,7 @@
 package Pertemuan_Minggu_1;
 import java.util.Scanner;
 
-public class platNomor {
+public class Tugas01 {
     public static void main(String[] args) {
         Scanner inas = new Scanner(System.in);
 
@@ -25,7 +25,6 @@ public class platNomor {
                 if (plat.equals(kode[i])) {
                     System.out.println(kota[i]);
                 }
-            
         }
         inas.close();
     }

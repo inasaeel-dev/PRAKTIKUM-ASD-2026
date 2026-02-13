@@ -1,7 +1,7 @@
 package Pertemuan_Minggu_1;
 import java.util.Scanner;
 
-public class jadwalKuliah {
+public class Tugas02 {
         static Scanner inas = new Scanner(System.in);
     public static void inputJadwal(String [][] jadwal){
         for (int i = 0; i < jadwal.length; i++) {

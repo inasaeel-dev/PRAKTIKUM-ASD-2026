@@ -9,4 +9,8 @@
 
 Hasil jika memasukkan nilai tidak valid:
 
-![Screenshot](image/imageNilaiTdkValid.png)
+![Hasil tidak valid](image/image.png)
+
+Hasil jika memasukkan nilai valid:
+
+![Hasil valid](image/hasilTidakValid.png)

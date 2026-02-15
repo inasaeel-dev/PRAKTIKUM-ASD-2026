@@ -6,9 +6,7 @@
 | Repository | [link] (https://github.com/inasaeel-dev/PRAKTIKUM-ASD-2026/tree/main) |
 
 ## 1.1 Praktikum Pemilihan
-Hasil jika memasukkan nilai valid: 
-
-![Screenshot](img/image.png)
 
 Hasil jika memasukkan nilai tidak valid:
 
+![Screenshot](image/imageNilaiTdkValid.png)

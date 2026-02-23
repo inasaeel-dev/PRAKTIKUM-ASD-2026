@@ -22,7 +22,6 @@ public class pemilihan {
 
         System.out.println("==============================");
 
-        // Validasi nilai
         if (tugas < 0 || tugas > 100 ||
             kuis < 0 || kuis > 100 ||
             uts < 0 || uts > 100 ||

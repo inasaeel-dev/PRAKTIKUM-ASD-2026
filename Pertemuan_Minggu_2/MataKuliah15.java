@@ -24,7 +24,7 @@ public class MataKuliah15 {
     }
     void ubahSKS (int sksBaru) {
         sks = sksBaru;
-        System.out.println("SKS te;ah berhasil diubah!");
+        System.out.println("SKS telah berhasil diubah!");
     }
     void tambahJam (int jam) {
         jumlahJam += jam;

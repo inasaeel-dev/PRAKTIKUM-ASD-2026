@@ -1,6 +1,7 @@
 package Pertemuan_Minggu_2;
 
 public class MahasiswaMain15 {
+
     public static void main(String[] args) {
         Mahasiswa15 mhs1 = new Mahasiswa15 ();
         mhs1.nama = "Muhammad Ali Farhan";
@@ -16,5 +17,8 @@ public class MahasiswaMain15 {
         Mahasiswa15 mhs2 = new Mahasiswa15("Annisa Nabila", "2141720610", 3.25, "TI 2L");
         mhs2.updateIpk(3.30);
         mhs2.tampilkanInformasi();
+
+        Mahasiswa15 mhs3 = new Mahasiswa15("Latte", "25401032007", 3.7, "TM 1C");
+        mhs3.tampilkanInformasi();
     }
 }

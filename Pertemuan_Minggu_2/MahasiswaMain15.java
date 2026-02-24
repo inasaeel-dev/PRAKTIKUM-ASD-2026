@@ -26,7 +26,7 @@ public class MahasiswaMain15 {
         } else if (ipk >= 2.0) {
             return "Kinerja cukup";
         } else {
-            return "Kinerja kurang";
+            return "Kinerja kurang" ;
         }
     }
     public static void main(String[] args) {

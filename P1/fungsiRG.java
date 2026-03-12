@@ -1,4 +1,4 @@
-package Pertemuan_Minggu_1;
+package P1;
 public class fungsiRG {
     public static int hitungPendapatan(int [] stock, int [] hargaBarang) {
         int total = 0;

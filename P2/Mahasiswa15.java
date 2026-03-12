@@ -1,4 +1,4 @@
-package Pertemuan_Minggu_2;
+package P2;
 
 public class Mahasiswa15 {
     String nama;

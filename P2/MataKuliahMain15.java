@@ -1,4 +1,4 @@
-package Pertemuan_Minggu_2;
+package P2;
 
 public class MataKuliahMain15 {
     public static void main(String[] args) {

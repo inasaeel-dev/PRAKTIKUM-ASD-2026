@@ -1,4 +1,4 @@
-package Pertemuan_Minggu_1;
+package P1;
 import java.util.Scanner;
 
 public class array {

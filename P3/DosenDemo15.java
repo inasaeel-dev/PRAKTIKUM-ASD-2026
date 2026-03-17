@@ -21,7 +21,7 @@ public class DosenDemo15 {
             kode = inas.nextLine();
             System.out.print("Nama          : ");
             nama = inas.nextLine();
-            System.out.print("Jenis kelamin (true = perempuan, false = laki-laki  :");
+            System.out.print("Jenis kelamin (true = perempuan, false = laki-laki)  : ");
             jenisKelamin = inas.nextBoolean();
             System.out.print("Usia           : ");
             usia = inas.nextInt();
@@ -36,6 +36,16 @@ public class DosenDemo15 {
         data.dataSemuaDosen(arrayDosen15);
         System.out.println();
 
-        
+        System.out.println("===== Jumlah Dosen Per Jenis Kelamin =====");
+        data.jmlDosenPerJenisKelamin(arrayDosen15);
+        System.out.println();
+
+        System.out.println("===== Dosen Tertua =====");
+        data.dosenTertua(arrayDosen15);
+        System.out.println();
+
+        System.out.println("===== Dosen Termuda =====");
+        data.dosenTermuda(arrayDosen15);
+        System.out.println();
     }
 }

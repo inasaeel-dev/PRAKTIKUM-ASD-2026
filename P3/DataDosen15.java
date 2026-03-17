@@ -24,8 +24,8 @@ public class DataDosen15 {
                 LK++;
             }
         }
-        System.out.println("Jumlah Dosen Laki-laki  : " + LK);
         System.out.println("Jumlah Dosen Perempuan  :" + perempuan);
+        System.out.println("Jumlah Dosen Laki-laki  : " + LK);
     }
     void rataUsiaDosenPerjenisKelamin (Dosen15 [] arrayDosen15) {
         int totalLK = 0, totalPerempuan = 0, LK = 0, perempuan = 0;

@@ -22,4 +22,3 @@
 4. Buat Kesimpulan tentang perbedaan cara kerja method faktorialBF() dan faktorialDC()!
 - method faktorialBF () menghitung faktorial dengan perkalian berulang menggunakan perulangan dari 1 sampai n. sedangkan faktorialDC() menghitung faktorial dengan memanggil fungsi rekursif dari n hingga mencapai kondisi dasar, lalu hasilnya dikalikan kembali ke nilai awal
 
-## 5.2.2 Verfikasi Hasil Percobaan 2

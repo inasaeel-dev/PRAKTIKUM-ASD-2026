@@ -47,7 +47,7 @@ public class MahasiswaBerprestasi15 {
             }
             Mahasiswa15 tmp = listMhs[idxMin];
             listMhs[idxMin] = listMhs[i];
-            listMhs[i] = tmp;
+            listMhs[i] = tmp ;
         }
     }
 }

@@ -164,3 +164,225 @@ Kelas   : 1F
 IPK     : 3.6
 ----------------------
 ```
+
+## Verifikasi Hasil Percobaan 3
+```
+Masukkan jumlah mahasiswa : 5
+
+Nama  : Ali
+NIM   : 123
+Kelas : 2B
+IPK   : 3.9
+-------------------------
+Nama  : Ila
+NIM   : 124
+Kelas : 2B
+IPK   : 3.1
+-------------------------
+Nama  : Agus
+NIM   : 125
+Kelas : 2B
+IPK   : 3.6
+-------------------------
+Nama  : Tika
+NIM   : 126
+Kelas : 2B
+IPK   : 3.3
+-------------------------
+Nama  : Udin
+NIM   : 127
+Kelas : 2B
+IPK   : 3.2
+-------------------------
+Data mahasiswa sebelum sorting :
+Nama    : Ali
+NIM     : 123
+Kelas   : 2B
+IPK     : 3.9
+----------------------
+Nama    : Ila
+NIM     : 124
+Kelas   : 2B
+IPK     : 3.1
+----------------------
+Nama    : Agus
+NIM     : 125
+Kelas   : 2B
+IPK     : 3.6
+----------------------
+Nama    : Tika
+NIM     : 126
+Kelas   : 2B
+IPK     : 3.3
+----------------------
+Nama    : Udin
+NIM     : 127
+Kelas   : 2B
+IPK     : 3.2
+----------------------
+Data Mahasiswa setelah sorting berdasarkan IPK (DESC) :
+
+Nama    : Ali
+NIM     : 123
+Kelas   : 2B
+IPK     : 3.9
+----------------------
+Nama    : Agus
+NIM     : 125
+Kelas   : 2B
+IPK     : 3.6
+----------------------
+Nama    : Tika
+NIM     : 126
+Kelas   : 2B
+IPK     : 3.3
+----------------------
+Nama    : Udin
+NIM     : 127
+Kelas   : 2B
+IPK     : 3.2
+----------------------
+Nama    : Ila
+NIM     : 124
+Kelas   : 2B
+IPK     : 3.1
+----------------------
+```
+
+## Pertanyaan Praktikum 3
+1. Di dalam method selection sort, terdapat baris program
+```
+int idxMin = i;
+    for (int j = i + 1; j < listMhs.length; j++) {
+        if (listMhs[j].ipk < listMhs[idxMin].ipk){
+            idxMin = j;
+        }
+    }
+```
+Untuk apakah proses tersebut, jelaskan!
+- Untuk mencari posisi indeks elemen dengan nilai IPK terkecil pada bagian array yg belum berurutan
+
+## Verfikasi Hasil Percobaan 4
+```
+Masukkan jumlah mahasiswa : 5
+
+Nama  : Ayu
+NIM   : 111
+Kelas : 2C
+IPK   : 3.7
+-------------------------
+Nama  : Dika
+NIM   : 222
+Kelas : 2C
+IPK   : 3.0
+-------------------------
+Nama  : Ila
+NIM   : 333
+Kelas : 2C
+IPK   : 3.8
+-------------------------
+Nama  : Susi
+NIM   : 444
+Kelas : 2C
+IPK   : 3.1
+-------------------------
+Nama  : Yayuk
+NIM   : 555
+Kelas : 2C
+IPK   : 3.4
+-------------------------
+Data mahasiswa sebelum sorting :
+Nama    : Ayu
+NIM     : 111
+Kelas   : 2C
+IPK     : 3.7
+----------------------
+Nama    : Dika
+NIM     : 222
+Kelas   : 2C
+IPK     : 3.0
+----------------------
+Nama    : Ila
+NIM     : 333
+Kelas   : 2C
+IPK     : 3.8
+----------------------
+Nama    : Susi
+NIM     : 444
+Kelas   : 2C
+IPK     : 3.1
+----------------------
+Nama    : Yayuk
+NIM     : 555
+Kelas   : 2C
+IPK     : 3.4
+----------------------
+Data Mahasiswa setelah sorting berdasarkan IPK (DESC) :
+Nama    : Ila
+NIM     : 333
+Kelas   : 2C
+IPK     : 3.8
+----------------------
+Nama    : Ayu
+NIM     : 111
+Kelas   : 2C
+IPK     : 3.7
+----------------------
+Nama    : Yayuk
+NIM     : 555
+Kelas   : 2C
+IPK     : 3.4
+----------------------
+Nama    : Susi
+NIM     : 444
+Kelas   : 2C
+IPK     : 3.1
+----------------------
+Nama    : Dika
+NIM     : 222
+Kelas   : 2C
+IPK     : 3.0
+----------------------
+Data yang sudah terurut menggunakan INSERTION SORT (ASC) : 
+Nama    : Dika
+NIM     : 222
+Kelas   : 2C
+IPK     : 3.0
+----------------------
+Nama    : Susi
+NIM     : 444
+Kelas   : 2C
+IPK     : 3.1
+----------------------
+Nama    : Yayuk
+NIM     : 555
+Kelas   : 2C
+IPK     : 3.4
+----------------------
+Nama    : Ayu
+NIM     : 111
+Kelas   : 2C
+IPK     : 3.7
+----------------------
+Nama    : Ila
+NIM     : 333
+Kelas   : 2C
+IPK     : 3.8
+----------------------
+```
+
+## Pertanyaan Percobaan 4
+1. Ubahlah fungsi pada InsertionSort sehingga fungsi ini dapat melaksanakan proses sorting dengan cara descending
+```
+void insertionSortDescending(){
+        for (int i = 1; i < listMhs.length; i++) {
+            Mahasiswa15 temp = listMhs[i];
+            int j = i;
+            while (j > 0 && listMhs[j -1].ipk < temp.ipk) {
+                listMhs[j] = listMhs[j -1];
+                j--;
+            }
+            listMhs[j] = temp;
+        }
+    }
+```

@@ -386,3 +386,136 @@ void insertionSortDescending(){
         }
     }
 ```
+
+## Latihan Praktikum
+```
+ === MENU ===
+1. Tambah Data 
+2. Tampil Data
+3. Sorting ASC
+4. Sorting DSC
+5. Insertion Sort
+0. Keluar
+
+Pilih : 1
+Nama : 123
+Kode : el
+Jenis Kelamin Laki-Laki ? (Y/N) : n
+Usia : 19
+
+ === MENU ===
+1. Tambah Data
+2. Tampil Data
+3. Sorting ASC
+4. Sorting DSC
+5. Insertion Sort
+0. Keluar
+
+Pilih : 1
+Nama : sakha
+Kode : 124
+Jenis Kelamin Laki-Laki ? (Y/N) : y
+Usia : 14
+
+ === MENU ===
+1. Tambah Data
+2. Tampil Data
+3. Sorting ASC
+4. Sorting DSC
+5. Insertion Sort
+0. Keluar
+
+Pilih : 1
+Nama : nana
+Kode : 127
+Jenis Kelamin Laki-Laki ? (Y/N) : n
+Usia : 19
+
+ === MENU ===
+1. Tambah Data
+2. Tampil Data
+3. Sorting ASC
+4. Sorting DSC
+5. Insertion Sort
+0. Keluar
+
+Pilih : 2
+Nama : 123
+Kode : el
+Jenis Kelamin Laki-Laki ? false
+Usia : 19
+-----------------------
+Nama : sakha
+Kode : 124
+Jenis Kelamin Laki-Laki ? true
+Usia : 14
+-----------------------
+Nama : nana
+Kode : 127
+Jenis Kelamin Laki-Laki ? false
+Usia : 19
+-----------------------
+
+ === MENU ===
+1. Tambah Data
+2. Tampil Data
+3. Sorting ASC
+4. Sorting DSC
+5. Insertion Sort
+0. Keluar
+
+Pilih : 3
+Data diurutkan ASC 
+Nama : sakha
+Kode : 124
+Jenis Kelamin Laki-Laki ? true
+Usia : 14
+-----------------------
+Nama : 123
+Kode : el
+Jenis Kelamin Laki-Laki ? false
+Usia : 19
+-----------------------
+Nama : nana
+Kode : 127
+Jenis Kelamin Laki-Laki ? false
+Usia : 19
+-----------------------
+
+ === MENU ===
+1. Tambah Data
+2. Tampil Data
+3. Sorting ASC
+4. Sorting DSC
+5. Insertion Sort
+0. Keluar
+
+Pilih : 4
+Data diurutkan DSC 
+Nama : 123
+Kode : el
+Jenis Kelamin Laki-Laki ? false
+Usia : 19
+-----------------------
+Nama : nana
+Kode : 127
+Jenis Kelamin Laki-Laki ? false
+Usia : 19
+-----------------------
+Nama : sakha
+Kode : 124
+Jenis Kelamin Laki-Laki ? true
+Usia : 14
+-----------------------
+
+ === MENU ===
+1. Tambah Data
+2. Tampil Data
+3. Sorting ASC
+4. Sorting DSC
+5. Insertion Sort
+0. Keluar
+
+Pilih : 0
+Keluar program !
+```

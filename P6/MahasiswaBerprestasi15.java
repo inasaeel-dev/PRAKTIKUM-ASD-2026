@@ -4,6 +4,10 @@ public class MahasiswaBerprestasi15 {
     Mahasiswa15 [] listMhs = new Mahasiswa15[5];
     int idx;
 
+    MahasiswaBerprestasi15(int n){
+        listMhs = new Mahasiswa15[n];
+    }
+
     void tambah (Mahasiswa15 m){
         if (idx < listMhs.length){
             listMhs[idx] = m;
@@ -13,9 +17,13 @@ public class MahasiswaBerprestasi15 {
         }
     }
     void tampil (){
-        for (Mahasiswa15 m:listMhs){
-            m.tampilInformasi();
-            System.out.println("-------------------------");
+        // for (Mahasiswa15 m:listMhs){
+        //     m.tampilInformasi();
+        //     System.out.println("-------------------------");
+        // }
+        for (int i = 0; i < idx; i++) {
+            listMhs[i].tampilInformasi();
+            System.out.println("----------------------");
         }
     }
     void bubbleSort(){
@@ -27,6 +35,19 @@ public class MahasiswaBerprestasi15 {
                     listMhs[j -1] = tmp;
                 }
             }
+        }
+    }
+    void selectionSort(){
+        for (int i = 0; i < listMhs.length; i++) {
+            int idxMin = i;
+            for (int j = i + 1; j < listMhs.length; j++) {
+                if (listMhs[j].ipk < listMhs[idxMin].ipk){
+                    idxMin = j;
+                }
+            }
+            Mahasiswa15 tmp = listMhs[idxMin];
+            listMhs[idxMin] = listMhs[i];
+            listMhs[i] = tmp;
         }
     }
 }

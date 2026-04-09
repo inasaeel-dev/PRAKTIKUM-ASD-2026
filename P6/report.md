@@ -59,3 +59,108 @@ data[j +1] = data[j];
 - Untuk menggeser elemen ke kanan agar elemen yg lebih kecil dapat posisi urutan yg benar
 
 ## 5.3.1 Verifikasi Hasil Percobaan 2
+```
+Data mahasiswa sebelum sorting : 
+Nama : Zidan
+NIM : 123
+Kelas : 2A
+IPK : 3.2
+-------------------------
+Nama : Ayu
+NIM : 124
+Kelas : 2A
+IPK : 3.5
+-------------------------
+Nama : Sofi
+NIM : 125
+Kelas : 2A
+IPK : 3.1
+-------------------------
+Nama : Sita
+NIM : 126
+Kelas : 2A
+IPK : 3.9
+-------------------------
+Nama : Miki
+NIM : 127
+Kelas : 2A
+IPK : 3.7
+-------------------------
+Data Mahasiswa setelah sorting berdasarkan IPK (DESC) :
+Nama : Sita
+NIM : 126
+Kelas : 2A
+IPK : 3.9
+-------------------------
+Nama : Miki
+NIM : 127
+Kelas : 2A
+IPK : 3.7
+-------------------------
+Nama : Ayu
+NIM : 124
+Kelas : 2A
+IPK : 3.5
+-------------------------
+Nama : Zidan
+NIM : 123
+Kelas : 2A
+IPK : 3.2
+-------------------------
+Nama : Sofi
+NIM : 125
+Kelas : 2A
+IPK : 3.1
+-------------------------
+```
+
+## Pertanyaan Praktikum 2
+1. Perhatikan perulangan di dalam bubbleSort() di bawah ini :
+```
+for (int i = 0; i < listMhs.length -1; i++) {
+        for (int j = 1; j < listMhs.length -i; j++){
+```
+a. Mengapa syarat dari perulangan i adalah i < listMhs.length-1 ?
+- Syarat tersebut digunakan untuk menempatkan elemen terkecil ke posisi paling akhir setiap iterasi
+b. Mengapa syarat dari perulangan j adalah j < listMhs.length-i ?
+- Untuk menghindari membandingkan elemen yg sudah berada di posisi yg tepat
+c. Jika banyak data di dalam listMhs adalah 50, maka berapakali perulangan i akan berlangsung? Dan ada berapa Tahap bubble sort yang ditempuh?
+- Perulangan i dan tahap bubble sort dilakukan sebanyak 49x
+
+2. Modifikasi program diatas dimana data mahasiswa bersifat dinamis (input dari keyborad) yang terdiri dari nim, nama, kelas, dan ipk!
+```
+Masukkan jumlah mahasiswa : 2
+
+Nama  : El
+NIM   : 127
+Kelas : 1F
+IPK   : 3.6
+-------------------------
+Nama  : Sakha
+NIM   : 142
+Kelas : 1A
+IPK   : 3.8
+-------------------------
+Data mahasiswa sebelum sorting :
+Nama    : El
+NIM     : 127
+Kelas   : 1F
+IPK     : 3.6
+----------------------
+Nama    : Sakha
+NIM     : 142
+Kelas   : 1A
+IPK     : 3.8
+----------------------
+Data Mahasiswa setelah sorting berdasarkan IPK (DESC) :       
+Nama    : Sakha
+NIM     : 142
+Kelas   : 1A
+IPK     : 3.8
+----------------------
+Nama    : El
+NIM     : 127
+Kelas   : 1F
+IPK     : 3.6
+----------------------
+```

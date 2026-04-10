@@ -35,14 +35,7 @@ public class MahasiswaDemo15 {
         System.out.println("Masukkan ipk mahasiswa yang dicari : ");
         System.out.print("IPK : ");
         String stCari = inas.nextLine();
-        double cari = Double.parseDouble(stCari);
-        System.out.println("-----------------------");
-        System.out.println("Menggunakan binary search");
-        System.out.println("-----------------------");
-        double posisi2 = list.findBinarySearch(cari, 0, n - 1);
-        int pss2 = (int)posisi2;
-        list.tampilPosisi(cari, pss2);
-        list.tampilDataSeacrh(cari, pss2);
+        double cari = inas.nextDouble();
 
         System.out.println("----------------------------");
         System.out.println("Menggunakan sequential searching");
@@ -51,19 +44,5 @@ public class MahasiswaDemo15 {
         list.tampilPosisi(cari, pss);
         list.tampilDataSeacrh(cari, pss);
 
-        System.out.println("\nData mahasiswa sebelum sorting : ");
-        list.tampil();
-
-        System.out.println("\nData mahasiswa setelah sorting berdasarkan IPK (DESC) : ");
-        list.bubbleSort();
-        list.tampil();
-
-        System.out.println("\nData yang sudah terturut menggunakan SELECTION SORT (ASC)");
-        list.selectionSort();
-        list.tampil();
-
-        System.out.println("\nData yang sudah terurut menggunakan INSERTION SORT");
-        list.insertionSort();
-        list.tampil();
     }
 }

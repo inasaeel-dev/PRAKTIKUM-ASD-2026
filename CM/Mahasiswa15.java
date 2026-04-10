@@ -51,15 +51,14 @@ class peminjaman15{
     void hitungDenda(){
         if(lamaPinjam > batasPinjam){
             terlambat = lamaPinjam - batasPinjam;
-            denda = terlambat * 1000;
+            denda = terlambat * 2000;
         }else{
             terlambat = 0;
             denda = 0;
         }
     }
-   public void tampil() {
-        System.out.println(mhs.nim + " | " + mhs.nama + " | " + buku.judul +
-                " | " + lamaPinjam + " hari | Terlambat: " + terlambat +
+   public void tampilPeminjaman() {
+        System.out.println(mhs.nim + " | " + mhs.nama + " | " + buku.judul +   " | " + lamaPinjam + " hari | Terlambat: " + terlambat +
                 " | Denda: Rp " + denda);
     }
 }

@@ -8,12 +8,12 @@ public class MahasiswaBerprestasi15 {
         listMhs = new Mahasiswa15[n];
     }
 
-    void tambah (Mahasiswa15 m){
-        if (idx < listMhs.length){
+    void tambah(Mahasiswa15 m) {
+        if (idx < listMhs.length) {
             listMhs[idx] = m;
             idx++;
         } else {
-            System.out.println("data sudah penuh");
+            System.out.println("Data sudah penuh");
         }
     }
     void tampil (){
@@ -23,7 +23,7 @@ public class MahasiswaBerprestasi15 {
         // }
         for (int i = 0; i < idx; i++) {
             listMhs[i].tampilInformasi();
-            System.out.println("----------------------");
+            System.out.println("----------------------------");
         }
     }
     void bubbleSort(){
@@ -72,7 +72,7 @@ public class MahasiswaBerprestasi15 {
             listMhs[j] = temp;
         }
     }
-    void sequentialSearching(double cari){
+    int sequentialSearching(double cari){
         int posisi = -1;
         for (int j = 0; j < listMhs.length; j++) {
             if (listMhs[j].ipk == cari){
@@ -84,7 +84,7 @@ public class MahasiswaBerprestasi15 {
     }
     void tampilPosisi(double x, int pos){
         if (pos != -1){
-            System.out.println("Data mahasiswa dengan IPK : " + x + "ditemukan pada indeks" + pos);
+            System.out.println("Data mahasiswa dengan IPK : " + x + " ditemukan pada indeks " + pos);
         } else {
             System.out.println("data " + x + "tidak ditemukan ");
         }
@@ -95,7 +95,8 @@ public class MahasiswaBerprestasi15 {
             System.out.println("nama\t : " +listMhs[pos].nama);
             System.out.println("kelas\t : "+listMhs[pos].kelas);
             System.out.println("ipk\t : " +x);
-        } else {
+        } 
+        else {
             System.out.println("Data mahasiswa dengan IPK " +x+ "tidak ditemukan");
         }
     }

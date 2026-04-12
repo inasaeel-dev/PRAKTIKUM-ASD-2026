@@ -4,8 +4,12 @@ import java.util.Scanner;
 
 public class MahasiswaDemo15 {
     public static void main(String[] args) {
-        MahasiswaBerprestasi15 list = new MahasiswaBerprestasi15(5);
         Scanner inas = new Scanner(System.in);
+        System.out.print("Masukkan jumlah mahasiswa : ");
+        int n = inas.nextInt();
+        System.out.println();
+
+        MahasiswaBerprestasi15 list = new MahasiswaBerprestasi15(n);
     
         int jmlMhs = 5;
 
@@ -27,14 +31,26 @@ public class MahasiswaDemo15 {
         System.out.println("------------------------------------");
         System.out.println("Pencarian data");
         System.out.println("------------------------------------");
+
+        for (int i = 0; i < list.listMhs.length - 1; i++) {
+            for (int j = 0; j < list.listMhs.length - i - 1; j++) {
+                if (list.listMhs[j].ipk > list.listMhs[j + 1].ipk) {
+                    Mahasiswa15 temp = list.listMhs[j];
+                    list.listMhs[j] = list.listMhs[j + 1];
+                    list.listMhs[j + 1] = temp;
+            }
+        }
+    }
         System.out.println("Masukkan ipk mahasiswa yang dicari : ");
         System.out.print("IPK : ");
         String ip = inas.nextLine();
         double cari = Double.parseDouble(ip);
 
-        System.out.println("Menggunakan sequential searching");
-        double posisi = list.sequentialSearching(cari);
-        int pss = (int)posisi;
+        System.out.println("------------------------------------");
+        System.out.println("Menggunakan binary search");
+        System.out.println("------------------------------------");
+        double posisi2 = list.findBinarySearch(cari, 0, jmlMhs -1);
+        int pss = (int)posisi2;
 
         list.tampilPosisi(cari, pss);
         list.tampilDataSearch(cari, pss);

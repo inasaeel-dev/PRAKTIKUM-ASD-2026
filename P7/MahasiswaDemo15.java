@@ -15,7 +15,7 @@ public class MahasiswaDemo15 {
 
         for (int i = 0; i < jmlMhs; i++) {
             System.out.println("Masukkan data mahasiswa ke - " + (i+1));
-            System.out.print("NIM       : ");
+            System.out.println("NIM       : ");
             String nim = inas.nextLine();
             System.out.print("Nama      : ");
             String nama = inas.nextLine();

@@ -66,6 +66,7 @@ public class PeminjamanDemo15 {
                 }
             } else if (pilihMenu == 5){
                 System.out.print("Masukkan NIM: ");
+                // 
                 String cariNIM = inas.nextLine();
                     for (int i = 1; i < p.length; i++) {
                         peminjaman15 key = p[i];

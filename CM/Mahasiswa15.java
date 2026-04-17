@@ -35,7 +35,7 @@ class buku15 {
         System.out.println("Tahun Terbit  : " + tahunTerbit);
     }
 }
-class peminjaman15{
+class peminjaman15 {
     Mahasiswa15 mhs;
     buku15 buku;
     int lamaPinjam;
@@ -48,17 +48,16 @@ class peminjaman15{
         this.lamaPinjam = lamaPinjam;
         hitungDenda();
     }
-    void hitungDenda(){
+    void hitungDenda(){ // A sesi 4
         if(lamaPinjam > batasPinjam){
             terlambat = lamaPinjam - batasPinjam;
-            denda = terlambat * 2000;
+            denda =  terlambat * 20000;
         }else{
-            terlambat = 0;
-            denda = 0;
+            System.out.println();
         }
     }
    public void tampilPeminjaman() {
         System.out.println(mhs.nim + " | " + mhs.nama + " | " + buku.judul +   " | " + lamaPinjam + " hari | Terlambat: " + terlambat +
-                " | Denda: Rp " + denda);
+            " | Denda: Rp " + denda);
     }
 }

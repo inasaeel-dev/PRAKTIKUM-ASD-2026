@@ -201,3 +201,125 @@ Menu:
 Pilih: 6
 Jumlah tugas yg sudah terkumpul : 2
 ```
+
+## 2.2 Percobaan 2
+```
+Menu: 
+1. Mengumpulkan Tugas
+2. Menilai Tugas
+3. Melihat Tugas Teratas
+4. Melihat Daftar Tugas
+5. Melihat Tugas Terbawah
+6. Jumlah Tugas yang Terkumpul
+Pilih: 1
+Nama  : Tika
+NIM   : 1002
+Kelas : 1D
+Tugas Tika berhasil dikumpulkan
+ 
+Menu: 
+1. Mengumpulkan Tugas
+2. Menilai Tugas
+3. Melihat Tugas Teratas
+4. Melihat Daftar Tugas
+5. Melihat Tugas Terbawah
+6. Jumlah Tugas yang Terkumpul
+Pilih: 2
+Menilai tugas dari Tika
+Masukkan nilai (0-100): 87
+Nilai tugas Tika adalah 87
+Nilai biner tugas : 1010111
+```
+
+## 2.2.3 Pertanyaan
+1. Jelaskan alur kerja dari method konversiDesimalKeBiner!
+>konversiDesimalKeBiner bekerja dengan cara membagi bilangan desimal berulang dengan 2 dan menyimpan sisa pembagian ke dalam stack
+
+2. Pada method konversiDesimalKeBiner, ubah kondisi perulangan menjadi while (kode != 0), bagaimana hasilnya? Jelaskan alasannya!
+> error, karena variabel kode tidak pernah di deklarasikan
+
+## 2.4 Latihan Praktikum
+```
+Menu : 
+1. Masukkan Data Surat
+2. Memverifikasi Surat
+3. Melihat Surat Teratas
+4. Cari Surat Berdasarkan Nama Mahasiswa
+Pilih : 1
+ID Surat: 1001
+Nama: inas
+Kelas: 1F
+Jenis Izin (S/I): i
+Durasi: 1
+
+Menu : 
+1. Masukkan Data Surat
+2. Memverifikasi Surat
+3. Melihat Surat Teratas
+4. Cari Surat Berdasarkan Nama Mahasiswa
+Pilih : 1
+ID Surat: 1002
+Nama: ntip
+Kelas: 1F
+Jenis Izin (S/I): i
+Durasi: 1
+
+Menu : 
+1. Masukkan Data Surat
+2. Memverifikasi Surat
+3. Melihat Surat Teratas
+4. Cari Surat Berdasarkan Nama Mahasiswa
+Pilih : 1
+ID Surat: 1003
+Nama: ndut
+Kelas: 1D
+Jenis Izin (S/I): i
+Durasi: 1
+
+Menu : 
+1. Masukkan Data Surat
+2. Memverifikasi Surat
+3. Melihat Surat Teratas
+4. Cari Surat Berdasarkan Nama Mahasiswa
+Pilih : 2
+Verifikasi Surat 
+ID Surat        Nama    Kelas   Jenis Izin      Durasi 
+1001            inas    1F      i               1
+1002            ntip    1F      i               1
+1003            ndut    1D      i               1
+ 
+
+Menu : 
+1. Masukkan Data Surat
+2. Memverifikasi Surat
+3. Melihat Surat Teratas
+4. Cari Surat Berdasarkan Nama Mahasiswa
+Pilih : 3
+Surat terakhir di input pada mahasiswa  ndut
+
+Menu : 
+1. Masukkan Data Surat
+2. Memverifikasi Surat
+3. Melihat Surat Teratas
+4. Cari Surat Berdasarkan Nama Mahasiswa
+Pilih : 4
+Cari nama: inas
+Surat ditemukan!
+
+Menu : 
+1. Masukkan Data Surat
+2. Memverifikasi Surat
+3. Melihat Surat Teratas
+4. Cari Surat Berdasarkan Nama Mahasiswa
+Pilih : 4   
+Cari nama: ntip
+Surat ditemukan!
+
+Menu : 
+1. Masukkan Data Surat
+2. Memverifikasi Surat
+3. Melihat Surat Teratas
+4. Cari Surat Berdasarkan Nama Mahasiswa
+Pilih : 5
+Pilihan Tidak Valid!
+```

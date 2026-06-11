@@ -5,6 +5,10 @@ public class Node15 {
     Node15 left;
     Node15 right;
 
+    public Node15(){
+        
+    }
+
     public Node15(Mahasiswa15 mahasiswa){
         this.mahasiswa = mahasiswa;
         left = right = null;

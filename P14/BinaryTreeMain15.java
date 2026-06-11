@@ -3,6 +3,14 @@ package P14;
 public class BinaryTreeMain15 {
     public static void main(String[] args) {
         BinaryTree15 bst = new BinaryTree15();
+        BinaryTree15 bstRekursif = new BinaryTree15();
+
+        bstRekursif.addRekursif(new Mahasiswa15("1 ", "Ali ", "A ", 3.57));
+        bstRekursif.addRekursif(new Mahasiswa15("2 ", "Badar ", "B ", 3.85));
+        bstRekursif.addRekursif(new Mahasiswa15("3 ", "Candra ", "C ", 3.21));
+
+        System.out.println("\nDaftar semua mahasiswa (rekursif) : ");
+        bstRekursif.traverseInOrder(bstRekursif.root);
 
         bst.add(new Mahasiswa15("244160121 ", "Ali ", "A ", 3.57));
         bst.add(new Mahasiswa15("244160221 ", "Badar ", "B ", 3.85));
@@ -36,5 +44,12 @@ public class BinaryTreeMain15 {
         bst.delete(3.57);
         System.out.println("\nDaftar semua mahasiswa setelah penghapusan 1 mahasiswa (in order traversal) : ");
         bst.traverseInOrder(bst.root);
+
+        System.out.println("\nMahasiswa dengan IPK terkecil:");
+        bst.cariMinIPK();
+        System.out.println("\nMahasiswa dengan IPK terbesar:");
+        bst.cariMaxIPK();
+        System.out.println("\nMahasiswa dengan IPK di atas 3.50:");
+        bst.tampilMahasiswaIPKdiAtas(null, 0);
     }
 }

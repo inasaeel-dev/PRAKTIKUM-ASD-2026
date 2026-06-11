@@ -96,3 +96,33 @@ parent = current;
 
 ## 14.3.1 Verifikasi Hasil Percobaan 2
 ```
+InOrder Traversal Mahasiswa : 
+NIM : 244160220 Nama : Dewi Kelas : B IPK : 3.35
+NIM : 244160185 Nama : Candra Kelas : C IPK : 3.41
+NIM : 244160131 Nama : Devi Kelas : A IPK : 3.48
+NIM : 244160121 Nama : Ali Kelas : A IPK : 3.57
+NIM : 244160205 Nama : Ehsan Kelas : D IPK : 3.61
+NIM : 244160221 Nama : Badar Kelas : B IPK : 3.75
+NIM : 244160170 Nama : Fizi Kelas : B IPK : 3.86
+```
+
+## 14.3.2 Pertanyaan
+1. Apakah kegunaan dari atribut data dan idxLast yang ada di class BinaryTreeArray?
+> untuk menyimpan seluruh node atau nilai yang ada dalam binary tree dalam bentuk array, sedangkan atribut idxLast digunakan untuk menyimpan indeks terakhir pada array
+
+2. Apakah kegunaan dari method populateData()?
+> untuk mengisi data binary tree yang disimpan dalam array sekaligus menentukan indeks terakhir yang berisi data
+
+3. Apakah kegunaan dari method traverseInOrder()?
+> untuk mencari seluruh node pada binary tree menggunakan urutan InOrder
+
+4. Jika suatu node binary tree disimpan dalam array indeks 2, maka di indeks berapakah posisi left child dan right child masing-masing?
+> left child = 2 * i + 1 = 2 × 2 + 1 = 5 & right child = 2 * i + 2 = 2 × 2 + 2 = 6
+
+5. Apa kegunaan statement int idxLast = 6 pada praktikum 2 percobaan nomor 4?
+> untuk menandai bahwa indeks terakhir yang berisi data pada array binary tree adalah indeks ke 6
+
+6. Mengapa indeks 2 * idxStart + 1 dan 2 * idxStart + 2 digunakan dalam pemanggilan rekursif, dan apa kaitannya dengan struktur pohon biner yang disusun dalam array?
+> berkaitan dengan cara penyimpanan binary tree dalam array, cara ini bisa menulusuri struktur pohon menggunakan array tanpa perlu menyimpan referensi left dan right pada setiap node
+
+## 14.4 Tugas Praktikum

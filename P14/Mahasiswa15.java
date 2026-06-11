@@ -15,4 +15,7 @@ public class Mahasiswa15 {
         this.kelas = kelas;
         this.ipk = ipk;
     }
+    public void tampilInformasi(){
+        System.out.println("NIM : " + this.nim + "Nama : " + this.nama + "Kelas : " + this.kelas + "IPK : " + this.ipk);
+    }
 }

@@ -49,5 +49,98 @@ public class BinaryTree15 {
         }
         return result;
     }
-    
+    void traversePreOrder(Node15 node){
+        if(node != null){
+            node.mahasiswa.tampilInformasi();
+            traversePreOrder(node.left);
+            traversePreOrder(node.right);
+        }
+    }
+    void traverseInOrder(Node15 node){
+        if(node != null){
+            traverseInOrder(node.left);
+            node.mahasiswa.tampilInformasi();
+            traverseInOrder(node.right);
+        }
+    }
+    void traversePostOrder(Node15 node){
+        if(node != null){
+            traversePostOrder(node.left);
+            traversePostOrder(node.right);
+            node.mahasiswa.tampilInformasi();
+        }
+    }
+    Node15 getSuccessor (Node15 del){
+        Node15 successor = del.right;
+        Node15 successorParent = del;
+        while (successor.left != null) {
+            successorParent = successor;
+            successor = successor.left;
+        } if (successor != del.right){
+            successorParent.left = successor.right;
+            successor.right = del.right;
+        }
+        return successor;
+    }
+    void delete(double ipk){
+        if (isEmpty()){
+            System.out.println("Binary tree kosong");
+            return;
+        }
+        Node15 parent = root;
+        Node15 current = root;
+        boolean isLeftChild = false;
+        while (current != null) {
+            if(current.mahasiswa.ipk == ipk){
+                break;
+            } else if (ipk < current.mahasiswa.ipk){
+                parent = current;
+                current = current.left;
+            } else if (ipk > current.mahasiswa.ipk){
+                parent = current;
+                current = current.right;
+                isLeftChild = false;
+            }
+        }
+        if (current == null){
+            System.out.println("Data tidak ditemukan");
+            return;
+        } else {
+            if(current.left == null && current.right == null){
+                if(current == root){
+                    root = null;
+                } else {
+                    if (isLeftChild){
+                        parent.left = null;
+                    } else {
+                        parent.right = null;
+                    }
+                }
+            } else if (current.left == null){
+                if(current == root){
+                    root = current.right;
+                } else {
+                    if(isLeftChild){
+                        parent.left = current.right;
+                    } else {
+                        parent.right = current.left;
+                    }
+                }
+            } else {
+                Node15 sucessor = getSuccessor(current);
+                System.out.println("Jika 2 anak, current = ");
+                sucessor.mahasiswa.tampilInformasi();
+                if(current == root){
+                    root = sucessor;
+                } else {
+                    if(isLeftChild){
+                        parent.left = sucessor;
+                    } else {
+                        parent.right = sucessor;
+                    }
+                }
+                sucessor.left = current.left;
+            }
+        }
+    }
 }

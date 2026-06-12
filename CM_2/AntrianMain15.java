@@ -28,6 +28,12 @@ public class AntrianMain15 {
                     antrian.tambahAntrian(new Pembeli15(3, "Sanri", "0822452222"));
                     antrian.tambahAntrian(new Pembeli15(4, "Vania", "0822453333"));
                     System.out.println("Antrian sudah ditambahkan");
+                    LinkedListRekapAntrian15 rekapJam = new LinkedListRekapAntrian15(11, 2); // penambahan rekap jam
+                    System.out.println("Jam masuk (0-23) : ");
+                    int jam = inas.nextInt();
+                    Pembeli15 p = new Pembeli15(jam, null, null);
+                    antrian.tambahAntrian(p);
+                    rekapJam = updateRekap(jam); // ini masih error
                     break;
                 case 2:
                     antrian.cetakAntrian();

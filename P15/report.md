@@ -60,13 +60,46 @@ Names: [Mei-mei, My kid, Akhleema, Shannum, Uwais, Al-Qarni]
 
 ## 16.3.2 Verifikasi Hasil Percobaan
 ```
-Banana Orange Watermelon Leci Strawberry 
-[Banana, Orange, Watermelon, Leci, Strawberry]
-Strawberry Leci Watermelon Orange Banana 
+Banana Orange Watermelon Leci Salak 
+[Banana, Orange, Watermelon, Leci, Salak]
+Salak Leci Watermelon Orange Banana 
 Melon Durian 
 Melon Durian 
 Melon Durian
 ```
 
 ## 16.3.3 Pertanyaan Percobaan
-1. 
+1. Apakah perbedaan fungsi push() dan add() pada objek fruits?
+> push digunakan untuk menambahkan elemen baru ke bagian atas stack sedangkan add untuk menambahkan elemen baru di akhir koleksi sehingga output yang dihasilkan akan sama
+
+2. Silakan hilangkan baris 43 dan 44, apakah yang akan terjadi? Mengapa bisa demikian?
+```
+Banana Orange Watermelon Leci Strawberry 
+[Banana, Orange, Watermelon, Leci, Strawberry]
+Strawberry Leci Watermelon Orange Banana 
+```
+> jika method push dihapus maka objek fruits tidak memiliki elemen yang dapat ditampilkan oleh perulangan iterator sehingga ketika dijalankan "melon" dan "durian" tidak muncul output
+3. Jelaskan fungsi dari baris 46-49?
+> kode program tersebut akan membuat objek iterator terlebih dahulu untuk mengakses elemen dalam collection fruits satu per satu, kemudian akan dilakukan pengecekan apakah masih ada elemen berikutnya yang belum terbaca jika ada maka perulangan akan terus berjalan, jika tidak maka perulangan akan berhenti. "it.next" akan mengambil elemen berikutnya dan memindahkan posisi iterator ke elemen berikutnya dan kemudian program akan menampilkan setiap elemen yang telah diperoleh
+
+4. Silakan ganti baris kode 25, Stack<String> menjadi List<String> dan apakah yang terjadi? Mengapa bisa demikian?
+> error, karena pada baris kode yang menggunakan method push, pop dan empty tidak ada dalam library list, program akan tetap berjalan menggunakan list
+
+5. Ganti elemen terakhir dari dari objek fruits menjadi “Strawberry”!
+```
+Banana Orange Watermelon Leci Strawberry 
+[Banana, Orange, Watermelon, Leci, Strawberry]
+Strawberry Leci Watermelon Orange Banana 
+```
+
+6. Tambahkan 3 buah seperti “Mango”,”guava”, dan “avocado” kemudian dilakukan sorting!
+```
+Banana Orange Watermelon Leci Strawberry 
+[Banana, Orange, Watermelon, Leci, Strawberry]
+Strawberry Leci Watermelon Orange Banana 
+
+Mango Guava Avocado 
+Setelah sorting: 
+[Avocado, Guava, Mango]
+```
+## 

@@ -58,4 +58,15 @@ Elemen 0: Mei-mei total elmeen 6 elemen terakhir: Al-Qarni
 Names: [Mei-mei, My kid, Akhleema, Shannum, Uwais, Al-Qarni]
 ```
 
-##
+## 16.3.2 Verifikasi Hasil Percobaan
+```
+Banana Orange Watermelon Leci Strawberry 
+[Banana, Orange, Watermelon, Leci, Strawberry]
+Strawberry Leci Watermelon Orange Banana 
+Melon Durian 
+Melon Durian 
+Melon Durian
+```
+
+## 16.3.3 Pertanyaan Percobaan
+1. 
